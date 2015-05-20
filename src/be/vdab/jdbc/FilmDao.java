@@ -1,5 +1,10 @@
 package be.vdab.jdbc;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.List;
+
 /**
  * Represents a strategy for managing Films in an underlying store.
  */
@@ -31,4 +36,7 @@ public interface FilmDao {
      * @return true in case of success.
      */
     boolean deleteFilm(int id);
+
+
+
 }
